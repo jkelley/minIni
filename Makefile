@@ -23,7 +23,8 @@ install: libminini.a
 	install -d $(PREFIX)/lib/
 	install -m 644 libminini.a $(PREFIX)/lib/
 	install -d $(PREFIX)/include/
-	install -m 644 minIni.h $(PREFIX)/include/
+	install -m 644 $(SRCDIR)/minIni.h $(PREFIX)/include/
+	install -m 644 $(SRCDIR)/minGlue.h $(PREFIX)/include/
 
 clean:
 	rm -f *.a *.o test
